@@ -1,0 +1,185 @@
+@font-face {
+  font-family: "Varela Round";
+  src: url(./fonts/VarelaRound-Regular.ttf);
+}
+
+html,
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-family: "Varela Round";
+}
+
+#clearBut {
+  width: 200px;
+  height: 40px;
+  position: absolute;
+  top: 150px;
+  right: 5%;
+  padding: 10px;
+}
+
+#skills {
+  width: 200px;
+  height: 40px;
+  position: absolute;
+  top: 70px;
+  right: 5%;
+  padding: 10px;
+}
+
+.startinfo {
+  color: white;
+  font-size: 23px;
+  border: solid white;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.451);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#info {
+  width: 28%;
+  height: 37%;
+  position: absolute;
+  bottom: 10%;
+  right: 5%;
+}
+
+#control {
+  width: 28%;
+  height: 20%;
+  position: absolute;
+  bottom: 10%;
+  left: 5%;
+}
+
+#menu {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(./img/bgmenu.jpg);
+}
+
+#box {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: 100% 100%;
+}
+
+canvas {
+  width: 800px;
+  height: 500px;
+  border: 3px rgba(255, 255, 255, 0.529) solid;
+}
+
+img {
+  display: none;
+}
+
+#scor {
+  width: 220px;
+  height: 40px;
+  position: absolute;
+  top: 10px;
+  left: 30px;
+}
+
+#bestscore {
+  width: 220px;
+  height: 40px;
+  position: absolute;
+  top: 70px;
+  left: 30px;
+}
+
+.but {
+  color: white;
+  border: solid white;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.451);
+  box-shadow: 3px 3px 3px gray;
+  font-size: 30px;
+  width: 100px;
+  height: 40px;
+  border: solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+  animation: 3s op alternate;
+}
+@keyframes op {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.but:hover {
+  scale: 1.03;
+  transition: 0.3s;
+  box-shadow: none;
+}
+
+#buttonback {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  display: none;
+}
+
+#buttongame {
+  position: absolute;
+  bottom: 30px;
+  left: 150px;
+  display: none;
+}
+
+#astr {
+  display: block;
+  width: 250px;
+  height: 300px;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  transform: rotate(0);
+  animation: 30s hero alternate forwards infinite;
+}
+@keyframes hero {
+  0% {
+    transform: rotate(0);
+  }
+  10% {
+    transform: rotate(-15deg);
+  }
+  20% {
+    transform: rotate(15deg);
+  }
+  35% {
+    transform: rotate(-25deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  67% {
+    transform: rotate(90deg);
+  }
+  85% {
+    transform: rotate(-50deg);
+  }
+  100% {
+    transform: rotate(45deg);
+  }
+}
